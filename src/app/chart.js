@@ -1,17 +1,12 @@
 import React, {Component} from 'react';
-import axios from 'axios';
 
-const user1 = ;
-const user2 = ;
-const user3 = ;
-
-export class Chart extends Component {
-    
-
-    render() {
-        console.log('bla');
-        return (
-            <h1>Hello</h1>
-        );
-    }
+function Chart({chart}) {
+    return (
+        <ul>
+            <li>{chart.commit.author.name}</li>
+            <li>{chart.commit.author.email}</li>
+        </ul>
+    );
 }
+
+export default Chart;
